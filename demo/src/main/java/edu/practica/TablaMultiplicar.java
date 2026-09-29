@@ -8,8 +8,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/hola")
-public class MyFirstServlet extends HttpServlet {
+@WebServlet("/tablas")
+public class TablaMultiplicar extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     @Override
@@ -17,15 +17,11 @@ public class MyFirstServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         try (PrintWriter out = response.getWriter()) {
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head><title>Hola Mundo</title></head>");
-            out.println("<body>");
-            out.println("<h1>HolaMundo</h1>");
-            out.println("<p>Mis nombres son: Cristian David</p>");
-            out.println("<p>Mi apellido es: Anghel</p>");
-            out.println("</body>");
-            out.println("</html>");
+            for (int i = 0 ; i <= 10 ; i++ ) {
+                for ( int j = 0 ; j <= 10 ; j++ ) {
+                    out.println("<p>" + i + "*" + j + "=" + i*j + "</p><br>");
+                }
+            }
         }
     }
 }
