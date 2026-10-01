@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.practica</groupId>
-  <artifactId>practica-servlets</artifactId>
+  <artifactId>app-web</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 
@@ -30,7 +30,7 @@
   </dependencies>
 
   <build>
-    <finalName>practica-servlets</finalName>
+    <finalName>app-web</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

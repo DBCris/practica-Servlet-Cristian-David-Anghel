@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Attach to Tomcat (Demo)",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": 5005,
+      "projectName": "app-web" //Tal y como aparece en VSCode
+    }
+  ]
+}
